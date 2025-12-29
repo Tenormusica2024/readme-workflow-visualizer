@@ -4,10 +4,12 @@ GitHub READMEにMermaidフローチャートを作成・管理するためのCla
 
 ## 概要
 
-各リポジトリのREADME.mdに、モダンなパステルカラーデザインのMermaidフローチャートを作成・更新するためのスキル定義。
+各リポジトリのREADME.mdを最新の状態に保ち、モダンなパステルカラーデザインのMermaidフローチャートを作成・更新するためのスキル定義。
 
 ## 機能
 
+- README整合性チェック（コードとの差異検出）
+- README自動更新
 - Mermaidフローチャートの標準スタイルガイド
 - 13色のパステルカラーパレット
 - GitHub READMEで動作確認済みのテンプレート
@@ -17,6 +19,7 @@ GitHub READMEにMermaidフローチャートを作成・管理するためのCla
 
 | Skill | 説明 |
 |-------|------|
+| `readme-sync-checker.md` | README整合性チェック＆自動更新 |
 | `mermaid-flowchart-style.md` | Mermaidフローチャートのスタイルガイド・テンプレート |
 
 ## 使用方法
@@ -29,7 +32,14 @@ cp -r .claude/skills /path/to/your/project/.claude/
 
 ### 2. Claude Codeで自動適用
 
-以下のような指示で自動的にスタイルが適用されます:
+以下のような指示で自動的に実行されます:
+
+**README整合性チェック:**
+- 「READMEを最新化して」
+- 「ドキュメントの整合性をチェックして」
+- 「README更新して」
+
+**フローチャート追加:**
 - 「フローチャートを作って」
 - 「ワークフローを可視化して」
 - 「READMEにシステム構成図を追加して」
